@@ -1,6 +1,6 @@
 # on.js #
 
-Custom event system for JavaScript, inspired by [JS-Signals](http://millermedeiros.github.com/js-signals/). on.js differs from Signals in that it has slighly fewer features (by design) and encourages a slighly different interface. See [Why another Event Library](#why) below for why this library exists and why you might use it. 
+Custom event system for JavaScript, inspired by [JS-Signals](http://millermedeiros.github.com/js-signals/). on.js differs from Signals in that it has slighly fewer features (by design) and encourages a slighly different interface. See "Why another Event Library" below for why this library exists and why you might use it. 
 
 ## Installing on.js ##
 
@@ -105,9 +105,9 @@ Coming soon...
 
 ### What About Feature X? ###
 
-An explicit design goal of on.js is to be as light as possible, removing all extraneous features and staying light. on.js will never add support for dealing with browser events, or add many other features - expect to see few releases unless there are bugfixes.
+An explicit design goal of on.js is to be as light as possible, removing all extraneous features and staying as small as possible. on.js will never add support for dealing with browser events, or add many other features - expect to see few releases unless there are bugfixes.
 
-<h2 id="#why">Why Another Event Library?</h2>
+## Why Another Event Library? ##
 
 I really like the design of [JS-Signals](http://millermedeiros.github.com/js-signals/). I have been a proponent of that library where I work, encouraging its successful adoption.
 
