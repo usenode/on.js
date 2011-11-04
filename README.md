@@ -68,11 +68,11 @@ A common pattern is to have one object subscribe to events on another. In the ca
 
 ### Removing a Listener ###
 
-To remove a listener, use the `cancel` method on the object returned from `onOpen` (or whatever your emitter function is called):
+To remove a listener, use the function returned from `onOpen` (or whatever your emitter function is called):
 
     var canceller = safe.onOpen(function () {
         // one-time only event
-        canceller.cancel();
+        canceller();
     });
 
 ### Removing all Listeners ###
