@@ -121,5 +121,5 @@ If these tradeoffs suit you, then use on.js. Otherwise, [JS-Signals](http://mill
 
 ## Copyright ##
 
-on.js is copyright Thomas Yandell <tom+deletethis@yandell.me.uk> 2011
+Copyright [Thomas Yandell](<tom+deletethis@yandell.me.uk>) 2011
 
