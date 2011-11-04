@@ -24,10 +24,10 @@ If you are using a system that can load [CommonJS modules](http://www.commonjs.o
 
 ## Using on.js ##
 
-on.js is designed to allow objects to publish events that can be subscribed to by one or more interested parties. The recommend way to publish an event is to use `on.create` within an object's prototype function:
+on.js is designed to allow objects to publish events that can be subscribed to by one or more interested parties. The recommend way to publish an event is to use `on` within an object's prototype function:
 
     var Safe = function () {
-        this.onOpen = on.create(this);
+        this.onOpen = on(this);
     };
 
 Users of your objects can subscribe to events as follows:
@@ -88,7 +88,7 @@ It may be necessary to remove all listeners attached to an object. To do this, u
 If you'd prefer not to let your subscribers fire events and remove listeners, you can move the `_fire` and `_removeAll` methods (they work fine as direct function calls):
 
     var Safe = function () {
-        this.onOpen = on.create(this);
+        this.onOpen = on(this);
         
         var _fire = this.onOpen._fire;
         delete this.onOpen._fire;
