@@ -111,7 +111,7 @@ An explicit design goal of on.js is to be as light as possible, removing all ext
 
 I really like the design of [JS-Signals](http://millermedeiros.github.com/js-signals/). I have been a proponent of that library where I work, encouraging its successful adoption.
 
-On the other hand, I'm not so keen on the recommended naming convention (naming the convention in the past tense - e.g. "canceled"), prefering a more familiar (at least to those who cut their teeth on the client-side) "on" prefix with present tense event name. I can live with this for modules I use, but am not keen on it for interfaces I provide. The other design goals of on.js are strict minimalism and a succinct interface.
+On the other hand, I'm not so keen on the recommended naming convention (naming the convention in the past tense - e.g. "canceled"), prefering a more familiar (at least to those who cut their teeth on the client-side) "on" prefix with present tense event name. I can live with this for modules I use, but am not keen on it for interfaces I provide. The other design goals of on.js are strict feature minimalism and a succinct interface.
 
 If these tradeoffs suit you, then use on.js. Otherwise, [JS-Signals](http://millermedeiros.github.com/js-signals/) is an excellent library and I would recommend it.
 
