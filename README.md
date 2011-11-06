@@ -4,7 +4,19 @@ Custom event system for JavaScript, inspired by [JS-Signals](http://millermedeir
 
 ## Installing on.js ##
 
-Coming soon...
+To install using [NPM](http://npmjs.org/):
+
+    npm install on
+
+To use in a browser with an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (e.g. [RequireJS](http://requirejs.org/), download one of the following releases:
+
+* [Minified with module ID](http://todo/) (recommended)
+* [Minified without module ID](http://todo/)
+
+Unminified versions are provided for debugging purposes:
+
+* [Unminified with module ID](http://todo/)
+* [Unminified without module ID](http://todo/)
 
 ## Loading on.js ##
 

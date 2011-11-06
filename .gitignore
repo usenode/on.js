@@ -1,3 +1,5 @@
 node_modules
 *.swp
 amd
+on.global.debug.js
+on.global.js

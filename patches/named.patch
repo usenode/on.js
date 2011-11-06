@@ -1,0 +1,16 @@
+--- lib/on.js	2011-11-06 12:15:35.000000000 +0000
++++ amd/on.named.debug.js	2011-11-06 20:29:38.000000000 +0000
+@@ -1,5 +1,5 @@
+ 
+-module.exports = function (on) {
++define('on', function () { return function (on) {
+ 
+     var i = 0, registered = [], add = function (handler, invocant) {
+         var ident = i++;
+@@ -21,5 +21,5 @@
+ 
+     return add;
+ 
+-};
++} });
+ 

@@ -1,17 +1,29 @@
 
+all: test amd global.js
 
-amd/on.js: ./node_modules/.bin/commonjs-to-amd lib/on.js
+amd: patches/debug.patch patches/named.patch lib/on.js node_modules/.bin/uglifyjs
+	set -e
 	mkdir -p amd
-	./node_modules/.bin/commonjs-to-amd lib/on.js > amd/on.js
+	cp lib/on.js amd/on.debug.js
+	patch amd/on.debug.js patches/debug.patch
+	cp lib/on.js amd/on.named.debug.js
+	patch amd/on.named.debug.js patches/named.patch
+	node_modules/.bin/uglifyjs amd/on.debug.js > amd/on.js
+	node_modules/.bin/uglifyjs amd/on.named.debug.js > amd/on.named.js
+
+global.js: patches/global.patch lib/on.js node_modules/.bin/uglifyjs
+	cp lib/on.js on.global.debug.js
+	patch on.global.debug.js patches/global.patch
+	node_modules/.bin/uglifyjs on.global.debug.js > on.global.js 
+
+node_modules/.bin/uglifyjs:
+	npm install uglify-js
 
 test: node_modules/.bin/litmus
 	node_modules/.bin/litmus tests/main.js
 
 node_modules/.bin/litmus:
 	npm install litmus
-
-node_modules/.bin/commonjs-to-amd:
-	npm install amdtools
 
 publish: 
 	perl -e '`git status` =~ /working directory clean/ or die "cannot publish without clean working dir\n"' && \
@@ -26,5 +38,5 @@ publish:
 	npm publish https://github.com/tomyan/on.js/tarball/v$$new_version
 
 clean:
-	rm -rf $(AMD_DIR) node_modules
+	rm -rf amd node_modules
 
