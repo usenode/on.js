@@ -5,7 +5,7 @@ var litmus = require('litmus'),
 module.exports.test  = new litmus.Test('main on.js tests', function () {
     var test = this;
 
-    test.plan(25);
+    test.plan(22);
 
     test.is(typeof on, 'function', 'main export is a function');
 
@@ -15,7 +15,6 @@ module.exports.test  = new litmus.Test('main on.js tests', function () {
     var onEvent = on(defaultInvocant);
 
     test.is(typeof onEvent, 'function', 'handler adder is a function');
-    test.is('' + onEvent, '[on.js emitter]', 'emitter stringifies properly');
 
     var defaultInvocantMostRecentArguments,
         defaultInvocantCalled = 0,
@@ -37,10 +36,8 @@ module.exports.test  = new litmus.Test('main on.js tests', function () {
     }, explicitInvocant);
 
     test.is(typeof defaultInvocantCanceller, 'function', 'first adder return value is function');
-    test.is('' + defaultInvocantCanceller, '[on.js canceller]', 'first adder stringifies properly');
 
     test.is(typeof explicitInvocantCanceller, 'function', 'second adder return value is function');
-    test.is('' + explicitInvocantCanceller, '[on.js canceller]', 'second adder stringifies properly');
 
     test.is(typeof onEvent._fire, 'function', 'fire is a function');
 
