@@ -10,13 +10,18 @@ To install using [NPM](http://npmjs.org/):
 
 To use in a browser with an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (e.g. [RequireJS](http://requirejs.org/), download one of the following releases:
 
-* [Minified with module ID](http://todo/) (recommended)
-* [Minified without module ID](http://todo/)
+* [Minified with module ID](https://github.com/downloads/tomyan/on.js/on.named.js) (recommended)
+* [Minified without module ID](https://github.com/downloads/tomyan/on.js/on.js)
 
 Unminified versions are provided for debugging purposes:
 
-* [Unminified with module ID](http://todo/)
-* [Unminified without module ID](http://todo/)
+* [Unminified with module ID](https://github.com/downloads/tomyan/on.js/on.named.debug.js)
+* [Unminified without module ID](https://github.com/downloads/tomyan/on.js/on.debug.js)
+
+If you're unlucky enough to be directly writing script tags to load JavaScript, you can use the following to load on.js:
+
+* [Minified](https://github.com/downloads/tomyan/on.js/on.global.js)
+* [Unminified](https://github.com/downloads/tomyan/on.js/on.global.debug.js)
 
 ## Loading on.js ##
 
