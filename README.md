@@ -118,7 +118,7 @@ If you'd prefer not to let your subscribers fire events and remove listeners, yo
 
 ### What About Dependency Injection? ###
 
-Coming soon...
+In general publishers are not dependent on subscribers but subscribers are dependent on publishers (sounds obvious). For testability therefore, you should make sure that publishers that you are subscribing to can be injected.
 
 ### What About Feature X? ###
 
