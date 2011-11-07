@@ -12,7 +12,7 @@ perl -e 'print "new version? "'
 
 read new_version
 
-perl -i -pe 's/("version"\s*:\s*\")(?:|\d+\.\d+\.\d+)(")/$$1."'$$new_version'".$$2/e' package.json
+perl -i -pe 's/("version"\s*:\s*\")(?:|\d+\.\d+\.\d+)(")/$1."'$new_version'".$2/e' package.json
 
 git commit -m 'Version for release' package.json
 
