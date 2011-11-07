@@ -10,11 +10,11 @@ make dist VERSION=$version
 
 npm publish on-v$version.tar.gz
 
-github_upload target/amd/on.js tomyan/on.js
-github_upload target/amd/on.debug.js tomyan/on.js
-github_upload target/amd/on.named.js tomyan/on.js
-github_upload target/amd/on.named.debug.js tomyan/on.js
+#github_upload target/amd/on.js tomyan/on.js
+#github_upload target/amd/on.debug.js tomyan/on.js
+#github_upload target/amd/on.named.js tomyan/on.js
+#github_upload target/amd/on.named.debug.js tomyan/on.js
 
-github_upload target/global/on.global.js
-github_upload target/global/on.global.debug.js
+#github_upload target/global/on.global.js
+#github_upload target/global/on.global.debug.js
 

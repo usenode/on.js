@@ -10,7 +10,8 @@ on-v$(VERSION).tar.gz: all
 
 all: test target/package.json target/README.md target/lib/on.js \
 	 target/amd/on.js target/amd/on.debug.js \
-	 target/amd/on.named.js target/amd/on.named.debug.js
+	 target/amd/on.named.js target/amd/on.named.debug.js \
+	 target/global/on.global.debug.js target/global/on.global.js
 
 target/package.json: package.json 
 	mkdir -p target
