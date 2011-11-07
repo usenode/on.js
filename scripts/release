@@ -16,7 +16,7 @@ perl -i -pe 's/("version"\s*:\s*\")(?:|\d+\.\d+\.\d+)(")/$1."'$new_version'".$2/
 
 git commit -m 'Version for release' package.json
 
-git tag v$$new_version
+git tag v$new_version
 
 git push origin master
 
