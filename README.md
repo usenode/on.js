@@ -8,7 +8,7 @@ To install using [NPM](http://npmjs.org/):
 
     npm install on
 
-To use in a browser with an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (e.g. [RequireJS](http://requirejs.org/), download one of the following releases:
+To use in a browser with an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (e.g. [RequireJS](http://requirejs.org/)), download one of the following releases:
 
 * [Minified with module ID](https://github.com/downloads/tomyan/on.js/on.named.js) (recommended)
 * [Minified without module ID](https://github.com/downloads/tomyan/on.js/on.js)
@@ -27,7 +27,7 @@ If you're unlucky enough to be directly writing script tags to load JavaScript, 
 
 ### ...in a Browser (AMD) ###
 
-If you are using an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (like [RequireJS](http://requirejs.org/), use the AMD version of on.js as follows:
+If you are using an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (like [RequireJS](http://requirejs.org/)), use the AMD version of on.js as follows:
 
     define(['on'], function (on) {
         // use on in the definition of your module
@@ -35,7 +35,7 @@ If you are using an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (l
 
 ### ...in a Server (e.g. Node.JS) ###
 
-If you are using a system that can load [CommonJS modules](http://www.commonjs.org/specs/modules/1.0/) (e.g. [Node.JS](http://nodejs.org/), use the CommonJS version of on.js as follows:
+If you are using a system that can load [CommonJS modules](http://www.commonjs.org/specs/modules/1.0/) (e.g. [Node.JS](http://nodejs.org/)), use the CommonJS version of on.js as follows:
  
     var on = require('on');
 
@@ -128,7 +128,7 @@ An explicit design goal of on.js is to be as light as possible, removing all ext
 
 I really like the design of [JS-Signals](http://millermedeiros.github.com/js-signals/). I have been a proponent of that library where I work, encouraging its successful adoption.
 
-On the other hand, I'm not so keen on the recommended naming convention (naming the convention in the past tense - e.g. "canceled"), prefering a more familiar (at least to those who cut their teeth on the client-side) "on" prefix with present tense event name. I can live with this for modules I use, but am not keen on it for interfaces I provide. The other design goals of on.js are strict feature minimalism and a succinct interface.
+On the other hand, I'm not so keen on the recommended naming convention (naming the event in the past tense - e.g. "canceled"), prefering a more familiar (at least to those who cut their teeth on the client-side) "on" prefix with present tense event name. I can live with this for modules I use, but am not keen on it for interfaces I provide. The other design goals of on.js are strict feature minimalism and a succinct interface.
 
 If these tradeoffs suit you then use on.js. Otherwise [JS-Signals](http://millermedeiros.github.com/js-signals/) is an excellent library and I would recommend it.
 
