@@ -71,7 +71,7 @@ Any parameters you pass to the `_fire` function are passed into each of the even
 
     // in the subscriber
     safe.onOpen(function (a, b) {
-         // a === 1, b === 2
+        // a === 1, b === 2
     });
 
 ### Overriding the Invocant ###
@@ -97,7 +97,7 @@ To remove a listener, use the function returned from `onOpen` (or whatever your 
 It may be necessary to remove all listeners attached to an object. To do this, use the `_removeAll` method on `onOpen` (or whatever your emitter is called):
 
     safe.prototype.destroy = function () {
-         this.onOpen._removeAll();
+        this.onOpen._removeAll();
     };
 
 ### What About Encapsulation? ###
