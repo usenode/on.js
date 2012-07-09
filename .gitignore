@@ -2,3 +2,4 @@ node_modules
 *.swp
 target
 on-v*.tar.gz
+upload
