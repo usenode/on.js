@@ -2,7 +2,7 @@
 var litmus = require('litmus'),
     on = require('..');
 
-module.exports.test  = new litmus.Test('main on.js tests', function () {
+module.exports.tests = module.exports  = new litmus.Test('main on.js tests', function () {
     var test = this;
 
     test.plan(22);
