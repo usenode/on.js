@@ -13,21 +13,27 @@ npm publish on-v$version.tar.gz
 mkdir -p upload/$version
 
 cp target/amd/on.js upload/$version/on-$version.js
-echo "upload/$version/on-$version.js on-$version.js - on.js $version minified AMD (without module identifier)"
+cp target/amd/on.js upload/$version/on.js
+echo "upload/$version/on-$version.js on-$version.js - on $version minified AMD (without module identifier)"
 
 cp target/amd/on.debug.js upload/$version/on.debug-$version.js
-echo "upload/$version/on.debug-$version.js on.debug-$version.js - on.js $version unminified AMD (without module identifier)"
+cp target/amd/on.debug.js upload/$version/on.debug.js
+echo "upload/$version/on.debug-$version.js on.debug-$version.js - on $version unminified AMD (without module identifier)"
 
 cp target/amd/on.named.js upload/$version/on.named-$version.js
-echo "upload/$version/on.named-$version.js on.named-$version.js - on.js $version minified AMD (with module identifier)"
+cp target/amd/on.named.js upload/$version/on.named.js
+echo "upload/$version/on.named-$version.js on.named-$version.js - on $version minified AMD (with module identifier)"
 
 cp target/amd/on.named.debug.js upload/$version/on.named.debug-$version.js
+cp target/amd/on.named.debug.js upload/$version/on.named.debug.js
 echo "upload/$version/on.named.debug-$version.js on.named.debug-$version.js - on $version unminified AMD (with module identifier)"
 
 cp target/global/on.global.js upload/$version/on.global-$version.js
+cp target/global/on.global.js upload/$version/on.global.js
 echo "upload/$version/on.global-$version.js on.global-$version.js - on $version minified global (loadable with script tag)"
 
 cp target/global/on.global.debug.js upload/$version/on.global.debug-$version.js
+cp target/global/on.global.debug.js upload/$version/on.global.debug.js
 echo "upload/$version/on.global.debug-$version.js on.global.debug-$version.js - on $version unminified global (loadable with script tag)"
 
 # TODO automatic upload to github# TODO automatic upload to github# TODO automatic upload to github
