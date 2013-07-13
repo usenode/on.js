@@ -1,14 +1,15 @@
 {
     "name"         : "on",
     "description"  : "on.js is a tiny custom event library",
-    "version"      : "1.0.0",
-    "engines"      : [ "node >=0.4.4" ],
-    "author"       : "Tom Yandell <tom.deletethis@yandell.me.uk> (http://tom.yandell.me.uk/blog/)",
+    "version"      : "1.1.0",
+    "author"       : "Tom Yandell <tom.deletethis@yandell.me.uk> (http://github.com/tomyan)",
+    "license"      : "MIT",
     "main"         : "./lib/on.js",
     "repository" : {
         "type" : "git",
         "url"  : "http://github.com/usenode/on.js.git"
     },
-    "homepage" : "http://github.com/usenode/on.js"
+    "homepage" : "https://npmjs.org/package/on",
+    "keywords" : [ "event", "events", "custom events", "pubsub", "tiny" ]  
 }
 

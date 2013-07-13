@@ -1,8 +1,9 @@
-# on.js #
+Custom event system for JavaScript, inspired by [JS-Signals](http://millermedeiros.github.com/js-signals/).
 
-Custom event system for JavaScript, inspired by [JS-Signals](http://millermedeiros.github.com/js-signals/). on.js differs from Signals in that it has slighly fewer features (by design) and encourages a slighly different interface. See "Why another Event Library" below for why this library exists and why you might use it. 
+on.js differs from Signals in that it has slighly fewer features (by design) and encourages a slighly different interface. See "Why another Event Library" below for why this library exists and why you might use it. 
 
-## Installing on.js ##
+Installing
+----------
 
 To install using [NPM](http://npmjs.org/):
 
@@ -23,7 +24,8 @@ If you're unlucky enough to be directly writing script tags to load JavaScript, 
 * [Minified](https://github.com/downloads/usenode/on.js/on.global.js)
 * [Unminified](https://github.com/downloads/usenode/on.js/on.global.debug.js)
 
-## Loading on.js ##
+Loading on.js
+-------------
 
 ### ...in a Browser (AMD) ###
 
@@ -39,7 +41,8 @@ If you are using a system that can load [CommonJS modules](http://www.commonjs.o
  
     var on = require('on');
 
-## Using on.js ##
+Using on.js
+-----------
 
 on.js is designed to allow objects to publish events that can be subscribed to by one or more interested parties. The recommend way to publish an event is to use `on` within an object's prototype function:
 
@@ -124,7 +127,8 @@ In general publishers are not dependent on subscribers but subscribers are depen
 
 An explicit design goal of on.js is to be as light as possible, removing all extraneous features and staying as small as possible. on.js will never add support for dealing with browser events, or add many other features - expect to see few releases unless there are bugfixes.
 
-## Why Another Event Library? ##
+Why Another Event Library?
+--------------------------
 
 I really like the design of [JS-Signals](http://millermedeiros.github.com/js-signals/). I have been a proponent of that library where I work, encouraging its successful adoption.
 
@@ -132,11 +136,17 @@ On the other hand, I'm not so keen on the recommended naming convention (naming 
 
 If these tradeoffs suit you then use on.js. Otherwise [JS-Signals](http://millermedeiros.github.com/js-signals/) is an excellent library and I would recommend it.
 
-## License ##
+License
+-------
 
-[The MIT License](http://www.opensource.org/licenses/mit-license.php)
+The MIT License (MIT)
 
-## Copyright ##
+Copyright (C) 2013 by <a href="https://github.com/tomyan/on.js/commits/master">the project's contributors</a>.
 
-Copyright [Thomas Yandell](<tom+deletethis@yandell.me.uk>) 2011-2012
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
