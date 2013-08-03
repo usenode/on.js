@@ -1,7 +1,7 @@
 {
     "name"         : "on",
     "description"  : "on.js is a tiny custom event library",
-    "version"      : "1.1.0",
+    "version"      : "1.2.0",
     "author"       : "Tom Yandell <tom.deletethis@yandell.me.uk> (http://github.com/tomyan)",
     "license"      : "MIT",
     "main"         : "./lib/on.js",
