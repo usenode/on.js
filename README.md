@@ -9,6 +9,10 @@ To install using [NPM](http://npmjs.org/):
 
     npm install on
 
+To install using [Jam](http://jamjs.org/)
+
+    jam install on
+
 To use in a browser with an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) loader (e.g. [RequireJS](http://requirejs.org/)), download one of the following releases:
 
 * [Minified with module ID](https://github.com/downloads/usenode/on.js/on.named.js) (recommended)

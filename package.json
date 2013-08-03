@@ -9,6 +9,9 @@
         "type" : "git",
         "url"  : "http://github.com/usenode/on.js.git"
     },
+    "jam" : {
+        "main" : "amd/on.named.debug.js"
+    },
     "homepage" : "https://npmjs.org/package/on",
     "keywords" : [ "event", "events", "custom events", "pubsub", "tiny" ]  
 }
