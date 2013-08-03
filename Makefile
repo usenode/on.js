@@ -1,4 +1,6 @@
 
+.PHONY: test publish release upload
+
 VERSION=DEV
 
 test: node_modules/.bin/litmus
@@ -6,10 +8,10 @@ test: node_modules/.bin/litmus
 
 publish: release upload
 
-release:
+release: all
 	scripts/release
 
-upload:
+upload: all
 	scripts/upload
 
 dist: on-v$(VERSION).tar.gz
